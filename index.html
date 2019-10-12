@@ -32,6 +32,7 @@
       <a-assets>
         <!-- Credit to Poly by Google for the model: https://poly.google.com/view/5ZMAz7_ucTn -->
         <a-asset-item id="sandCastleModel" src="LivingRoom.obj"></a-asset-item>
+          <a-asset-item id="sandCastleModel-mtl" src="LivingRoom.mtl"></a-asset-item>
       </a-assets>
 
       <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
@@ -52,7 +53,7 @@
 
       <a-light type="ambient" intensity="1"></a-light>
 
-      <a-entity obj-model="#sandCastleModel" class="cantap" hold-drag two-finger-spin pinch-scale scale="0.025 0.025 0.025"></a-entity>
+      <a-entity obj-model="obj: #sandCastleModel; mtl: #sandCastleModel-mtl" class="cantap" hold-drag two-finger-spin pinch-scale scale="0.025 0.025 0.025"></a-entity>
 
       <a-entity
         id="ground"
